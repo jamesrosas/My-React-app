@@ -1,0 +1,37 @@
+.modal-delete_container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+  position: relative;
+}
+
+.modal-title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  color: rgb(7, 7, 65);
+}
+.modal-paragraph {
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(7, 7, 65);
+  margin-bottom: 15px;
+}
+
+.btn {
+  margin: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 5px;
+}
+.eliminar {
+  background-color: rgb(226, 30, 144);
+}
+.cancel {
+  background-color: chartreuse;
+}

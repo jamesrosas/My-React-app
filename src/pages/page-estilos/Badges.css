@@ -1,0 +1,133 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-image: url("../"); */
+  background-color: black;
+  width: 100%;
+  padding: 20px;
+  height: auto;
+}
+
+.image-hero {
+  width: 500px;
+}
+.badges-container {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid red;
+  margin: 0 auto;
+  background-color: chartreuse;
+}
+.badges-copia_container {
+  background-color: chartreuse;
+}
+.btn-container {
+  position: relative;
+}
+.btn-badge {
+  width: fit-content;
+  padding: 5px;
+  background: rgb(10, 2, 29);
+  border-radius: 5px;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  font-weight: bold;
+  border: solid 1px white;
+  margin: 15px;
+  position: absolute;
+  right: 5%;
+}
+
+.badges-list {
+  border: solid 1px red;
+  margin-top: 60px;
+}
+
+ul li {
+  list-style: none;
+}
+
+.link-style{
+  text-decoration: none;
+  color: black;
+}
+
+.btn-ver_mas {
+  width: 200px;
+  height: fit-content;
+  color: white;
+  border-bottom: 3px solid rgb(62, 117, 6);
+  background-color: rgb(8, 8, 49);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  border-radius: 6px;
+  padding: 10px;
+  margin: 15px 0;
+}
+
+.btn-ver_mas__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.no-badges {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  color: rgb(4, 4, 29)167, 167, 177);
+}
+
+.skeleton-parent_container{
+  width: 95%;
+}
+.skeleton-container {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.btn-skeleton_container{
+  position: relative;
+  width: 100%;
+}
+.btn-skeleton{
+  width: 114px;
+  height: 30px;
+  margin-top: 130px;
+  margin-left: 700px;
+}
+.skeleton-head{
+  margin: 15px;
+  height: 65px;
+}
+.skeleton-img{
+  margin-left: 90px;
+}
+.skeleton-user {
+  float: right;
+  margin-left: -18px;
+  width: 200px;
+  margin-top: 80px;
+}
+
+.btn-home{
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  background-color: chartreuse;
+  color: rgb(10, 10, 59);
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  border-radius: 7px;
+  margin-bottom: 40px;
+
+}
+
+.img-error_container {
+  width: 40%;
+  min-width: 300px;
+  margin: 0 auto;
+}

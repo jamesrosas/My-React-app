@@ -1,0 +1,71 @@
+.badge-page_container {
+  width: 100%;
+  background-color: chartreuse;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  background-image: url("../page-images/stars.svg");
+  background-color: black;
+  width: 100%;
+  padding: 20px;
+  height: auto;
+}
+
+.image-hero {
+  width: 500px;
+  position: relative;
+  left: -320px;
+}
+
+.badgepage-main {
+  display: flex;
+  background-color: chartreuse;
+}
+.badge-parent {
+  width: 48%;
+  background-color: chartreuse;
+}
+.title-form {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: chartreuse;
+}
+.badgeform-parent {
+  width: 48%;
+  border: solid 3px white;
+  border-top-color: chartreuse;
+}
+
+.skeleton-parent_container {
+  width: 95%;
+}
+.skeleton-container {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.btn-skeleton_container {
+  position: relative;
+  width: 100%;
+}
+.btn-skeleton {
+  width: 114px;
+  height: 30px;
+  margin-top: 130px;
+  margin-left: 700px;
+}
+.skeleton-head {
+  margin: 15px;
+  height: 65px;
+}
+.skeleton-img {
+  margin-left: 90px;
+}
+.skeleton-user {
+  float: right;
+  margin-left: -18px;
+  width: 200px;
+  margin-top: 80px;
+}

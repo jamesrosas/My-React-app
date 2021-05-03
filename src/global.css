@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 30px;
+  color: blueviolet;
+}
+
+body {
+  background: chartreuse;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  background-image: url("./images/stars.svg");
+  background-color: black;
+  width: 100%;
+  padding: 20px;
+  height: auto;
+}
+
+.image-hero {
+  width: 500px;
+}
+.badgepage-main {
+  display: flex;
+}
+.badge-parent {
+  width: 48%;
+}
+.badgeform-parent {
+  width: 48%;
+  border: solid 3px white;
+  border-top-color: chartreuse;
+}

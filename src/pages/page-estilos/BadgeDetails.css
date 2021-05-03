@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero-container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../page-images/stars.svg");
+  background-color: black;
+  margin-bottom: 30px;
+}
+
+.hero-img {
+  margin: 10px 0;
+  width: 400px;
+  margin-right: 100px;
+}
+.name-title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 40px;
+  color: white;
+}
+
+.main-badges {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* background-color: chartreuse; */
+}
+.container-badges {
+  width: 100%;
+}
+.container-buttons {
+  width: 30%;
+  margin-left: -200px;
+  padding-top: 40px;
+}
+
+.btn-edit {
+  color: rgb(4, 4, 36);
+  background-color: chartreuse;
+  width: fit-content;
+  height: fit-content;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 2px solid white;
+  padding: 10px;
+  margin-bottom: 20px;
+  flex-direction: column;
+}
+
+.btn-delete {
+  color: white;
+  background-color: rgb(207, 12, 103);
+  width: fit-content;
+  height: fit-content;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 2px solid white;
+  padding: 10px;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.btn-skeleton {
+  margin-bottom: 20px;
+}

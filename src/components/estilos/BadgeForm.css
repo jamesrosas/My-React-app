@@ -1,0 +1,46 @@
+.input {
+  background: rgb(10, 2, 29);
+  caret-color: chartreuse;
+  outline: none;
+  width: 100%;
+  border: solid 1px chartreuse;
+  color: chartreuse;
+  padding: 6px;
+  border-radius: 5px;
+  margin: 6px 0;
+}
+label {
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 600;
+}
+.form-container {
+  padding: 15px;
+  margin-left: 30px;
+  margin-top: -150px; /* este fuen el cambio que hize para que el form sobresalge sobre el hero*/
+}
+
+form {
+  width: 95%; /*hice este cambio para que el form no se vea tan feo y descuadrado en mobile*/
+  background: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 8px grey;
+  height: auto; /*puse el height auto para que se adaptara al lo largo del contenido del form por sus inputs y demas*/
+  padding: 15px;
+}
+
+.form-button {
+  width: 60px;
+  padding: 7px;
+  color: white;
+  background: chartreuse;
+  border-radius: 5px;
+  outline: none;
+}
+
+.title-form {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: chartreuse;
+}
