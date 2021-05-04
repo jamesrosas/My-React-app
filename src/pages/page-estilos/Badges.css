@@ -21,6 +21,28 @@
   margin: 0 auto;
   background-color: chartreuse;
 }
+
+.search-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.label-title{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.search-input{
+  width: 250px;
+  height: 25px;
+  background-color: rgb(4, 4, 29);
+  color: chartreuse;
+  caret-color: chartreuse;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
 .badges-copia_container {
   background-color: chartreuse;
 }

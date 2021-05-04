@@ -9,6 +9,7 @@ import BadgesApi from './BadgesApi'
 import BadgeEdit from './BadgeEdit'
 import BadgeDetails from './BadgeDetails'
 import BadgeDetailsContainer from './BadgeDetailsContainer';
+import BadgesApiContainer from './BadgesApiContainer';
 
 
 function BadgesRouter() {
@@ -17,7 +18,7 @@ function BadgesRouter() {
         <Layout>
             <Switch>
                 <Route exact path="/badge-page" component={ BadgePage }/>
-                <Route exact path="/badges-api" component={ BadgesApi }/>
+                <Route exact path="/badges-api" component={ BadgesApiContainer }/>
                 <Route exact path="/badge/:badgeId/edit" component={ BadgeEdit }/>
                 <Route exact path="/badge/:badgeId" component={ BadgeDetailsContainer }/>
                 {/* <Route exact path="/badges-rick-morty" component={ BadgesRickMorty } /> */}

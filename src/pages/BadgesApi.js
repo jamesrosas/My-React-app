@@ -1,69 +1,13 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './page-estilos/Badges.css';
 import Badge from '../components/Badge';
 import confLogo from '../images/badge-header.svg';
 import { Link } from 'react-router-dom';
-import api from '../api'
-import errorImage from '../images/404Error-bro.svg'
-import Skeleton from 'react-loading-skeleton';
 
 
+function BadgesApi (props){
+        const badgesUsers = props.badges;
 
-class BadgesApi extends React.Component {
-    state = {
-        loading: true,
-        error: null,
-        data: undefined
-    }
-    componentDidMount(){
-        this.getApiData()
-    }
-
-    getApiData = async () => {
-        this.setState({ loading: true, error: null})
-        try {
-            const data = await api.badges.list();
-            this.setState({
-                loading: false,
-                data: data
-            })
-        }
-        catch (error){
-            this.setState({
-                loading: false,
-                error: error
-            })
-        }
-    }
-    
-    render(){
-        if (this.state.loading === true){
-            return (
-                <React.Fragment>
-                    <div><Skeleton height={250}/></div>
-                    <br/>
-                    <Badge firstName={<Skeleton width={200}/>} lastName={<Skeleton width={200}/>} email={<Skeleton/>} jobTitle={<Skeleton width={200}/>} twitter={<Skeleton width={200}/>} />
-                </React.Fragment>
-            )     
-        }
-          
-        if (this.state.error){
-            return (
-            <div>
-                <div className="img-error_container">
-                    <img src={errorImage} alt="Error 500" />
-                    <Link className="btn-home" to="/">Regresar a la pagina principal</Link>  
-                </div>
-            </div>
-            )
-        }
-        // if (this.state.data.length == 0){
-        //     return (
-        //         <div>
-        //             <h3>No se encontro una mierda</h3>
-        //         </div>
-        //     )
-        // }
         return(
             <div className="badges-copia_container">
             <div className="hero">
@@ -74,8 +18,12 @@ class BadgesApi extends React.Component {
                     <Link className="btn-badge" to="/badge-page" >New Badge</Link>
                 </div>
                 <div className="badges-list">
+                    <div className="search-container">
+                        <label>Buscar Badge</label>
+                        <input type="text" className="search-input"></input>
+                    </div>
                     <ul>
-                        {this.state.data.reverse().map((badge)=> {
+                        {badgesUsers.reverse().map((badge)=> {
                             return (
                             <li key={badge.id}>
                                 <Link to={`/badge/${badge.id}`} className="link-style">
@@ -85,7 +33,7 @@ class BadgesApi extends React.Component {
                             )
                         })} 
                     </ul>
-                    {this.state.data.length === 0 && (
+                    {badgesUsers.length === 0 && (
                         <div>
                             <h3 className="no-badges">No encontramos ningun Badge , crea uno nuevo dando click en New Badge</h3>
                         </div>
@@ -96,7 +44,6 @@ class BadgesApi extends React.Component {
             </div>
         </div>
         );
-    }
 }
         
 export default BadgesApi;
