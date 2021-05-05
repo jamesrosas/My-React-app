@@ -7,6 +7,7 @@ import api from '../api'
 import errorImage from '../images/404Error-bro.svg'
 import Skeleton from 'react-loading-skeleton';
 import BadgesApi from './BadgesApi';
+import BadgesApiPrueba from './BadgesApi-Prueba';
 
 
 
@@ -66,7 +67,7 @@ class BadgesApiClass extends React.Component {
         //     )
         // }
         return(
-            <BadgesApi badges={this.state.data}/>
+            <BadgesApi badgesList={this.state.data}/>
         )
     }
 }
